@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    min-height: 100vh;
+    background-color: #46178F;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+}
+
+@layer utilities {
+  .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  .font-nunito     { font-family: 'Nunito', sans-serif; }
+
+  /* Answer button bottom-border effect (Kahoot style) */
+  .ans-red    { background: #E21B3C; border-bottom: 5px solid #B8102D; }
+  .ans-blue   { background: #1368CE; border-bottom: 5px solid #0F50A8; }
+  .ans-yellow { background: #FFA602; border-bottom: 5px solid #D98700; }
+  .ans-green  { background: #26890C; border-bottom: 5px solid #1B6309; }
+
+  .ans-correct { outline: 3px solid #6EE95A !important; animation: correctFlash 0.5s ease; }
+  .ans-wrong   { opacity: 0.3 !important; transform: scale(0.95) !important; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar       { width: 6px; }
+  ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
+}
