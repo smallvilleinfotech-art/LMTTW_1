@@ -4,7 +4,7 @@ A full Kahoot-style live Bible quiz platform built with **React + Vite + Supabas
 Host games, share a PIN, participants join on any device, scores update live.
 
 ---
-
+ 
 ## 📦 What's in this repo
 
 ```
